@@ -8,7 +8,8 @@ import face_recognition
 from io import BytesIO
 from geopy.distance import geodesic  # For location checking
 
-app = Flask(__name__, static_folder='../frontend', static_url_path='/')
+FRONTEND_DIR = os.path.join(os.path.dirname(__file__), '..', 'frontend')
+app = Flask(__name__, static_folder=FRONTEND_DIR, static_url_path='/')
 CORS(app)
 
 DATA_DIR = os.path.dirname(os.path.abspath(__file__))
