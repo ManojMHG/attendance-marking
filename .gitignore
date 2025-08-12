@@ -5,3 +5,5 @@ __pycache__/
 *.pyd
 *.sqlite3
 .env
+backend/users.json
+backend/notifications.txt
