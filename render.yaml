@@ -2,8 +2,9 @@ services:
   - type: web
     name: attendance-marking-backend
     env: python
-    pythonVersion: 3.11.8
-    region: oregon  # or choose your preferred region
-    buildCommand: cd backend && pip install -r requirements.txt
+    region: oregon
+    buildCommand: |
+      apt-get update && apt-get install -y build-essential cmake libboost-all-dev
+      pip install -r backend/requirements.txt
     startCommand: cd backend && gunicorn app:app
     autoDeploy: true
