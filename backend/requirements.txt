@@ -1,0 +1,9 @@
+Flask
+flask-cors
+numpy
+pandas
+openpyxl
+python-dotenv
+werkzeug
+face_recognition
+Pillow

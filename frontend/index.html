@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Attendance Marking</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Attendance Marking</h1>
+
+    <div class="switch">
+      <button id="btn-login" class="active">Login</button>
+      <button id="btn-signup">Sign Up</button>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="login-form" class="form active">
+      <h2>Login</h2>
+      <label>ID</label>
+      <input id="login-id" type="text" />
+      <label>Password</label>
+      <input id="login-password" type="password" />
+
+      <div class="video-box">
+        <video id="video" autoplay muted playsinline></video>
+      </div>
+
+      <p class="location-note">
+        📍 Location permission is required — Attendance can only be marked in the authorized area.
+      </p>
+
+      <button id="login-capture">Capture & Login</button>
+      <div id="login-msg" class="msg"></div>
+    </div>
+
+    <!-- SIGNUP FORM -->
+    <div id="signup-form" class="form">
+      <h2>Sign Up</h2>
+      <label>ID</label>
+      <input id="signup-id" type="text" />
+      <label>Password</label>
+      <input id="signup-password" type="password" />
+      <label>Domain</label>
+      <select id="signup-domain">
+        <option value="domain1">Domain 1</option>
+        <option value="domain2">Domain 2</option>
+        <option value="domain3">Domain 3</option>
+      </select>
+
+      <div class="video-box">
+        <video id="video2" autoplay muted playsinline></video>
+      </div>
+
+      <p class="location-note">
+        📍 Location permission is required — Sign up only allowed in the authorized area.
+      </p>
+
+      <button id="signup-capture">Capture Face</button>
+
+      <div id="owner-secret-step" style="display:none;">
+        <label>Owner security value</label>
+        <input id="owner-secret" type="password" placeholder="Enter security value provided by owner" />
+        <button id="complete-signup">Complete Sign Up</button>
+      </div>
+
+      <div id="signup-msg" class="msg"></div>
+    </div>
+
+    <hr />
+    <div class="notes">
+      <p><strong>Note:</strong> This is a local prototype. For production use secure transport (HTTPS), proper database, and hardened authentication. Ensure users grant camera and location permissions.</p>
+      <p class="warn"><strong>⚠ Location Restriction Active:</strong> You must be within the authorized zone for both login and signup.</p>
+    </div>
+  </div>
+
+  <!-- Extra script to check if location API is available -->
+  <script>
+    if (!('geolocation' in navigator)) {
+      alert('Geolocation is not supported by your browser. This app will not work without it.');
+    }
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+*{box-sizing:border-box;font-family:Arial, sans-serif}
+body{background:#f4f6f8;color:#222;margin:0;padding:20px}
+.container{max-width:700px;margin:20px auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+h1{text-align:center;margin-top:0}
+.switch{display:flex;justify-content:center;margin-bottom:10px}
+.switch button{padding:8px 16px;margin:0 6px;border:1px solid #ddd;background:#f7f7f7;border-radius:6px;cursor:pointer}
+.switch button.active{background:#007bff;color:#fff;border-color:#006ee6}
+.form{display:none}
+.form.active{display:block}
+.form label{display:block;margin-top:10px;font-weight:600}
+.form input[type="text"], .form input[type="password"], .form select{width:100%;padding:8px;margin-top:6px;border:1px solid #ccc;border-radius:6px}
+.video-box{margin-top:12px;background:#000;height:240px;display:flex;align-items:center;justify-content:center;border-radius:6px;overflow:hidden}
+video{width:100%;height:240px;object-fit:cover}
+button{margin-top:12px;padding:10px 14px;border:none;background:#007bff;color:#fff;border-radius:6px;cursor:pointer}
+.msg{margin-top:8px;color:#b00;font-weight:600}
+.notes{font-size:13px;color:#555;margin-top:12px}

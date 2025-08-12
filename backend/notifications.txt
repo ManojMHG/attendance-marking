@@ -1,0 +1,3 @@
+2025-08-12T03:51:05.035464 - NOTIFICATION ERROR: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d9443c01a7336-241e899b6casm279995225ad.127 - gsmtp')
+2025-08-12T03:58:35.551119 - NOTIFICATION ERROR: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor 41be03b00d2f7-b422b7d86f7sm23860194a12.24 - gsmtp')
+2025-08-12T04:00:22.755270 - NOTIFICATION ERROR: (534, b'5.7.9 Application-specific password required. For more information, go to\n5.7.9  https://support.google.com/mail/?p=InvalidSecondFactor d2e1a72fcca58-76bd78875cesm26604123b3a.15 - gsmtp')
